@@ -1,4 +1,5 @@
 -- models/marts/dim_job_type.sql
+{{ config(materialized='table') }}
 with job_type_unique as (
     select distinct
         job_type_std

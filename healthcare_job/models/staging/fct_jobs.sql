@@ -1,3 +1,4 @@
+{{ config(materialized='table') }}
 select
     j.job_id,
     j.post_date_parsed,
