@@ -1,4 +1,3 @@
--- models/marts/dim_category.sql
 {{ config(materialized='table') }}
 with category_unique as (
     select distinct

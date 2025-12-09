@@ -1,4 +1,3 @@
--- models/marts/dim_salary.sql
 {{ config(materialized='table') }}
 with salary_unique as (
     select distinct

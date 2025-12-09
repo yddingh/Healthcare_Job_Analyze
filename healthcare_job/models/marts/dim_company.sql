@@ -1,4 +1,3 @@
--- models/marts/dim_company.sql
 {{ config(materialized='table') }}
 with company_unique as (
     select distinct
