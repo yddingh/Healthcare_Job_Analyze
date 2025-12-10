@@ -69,8 +69,6 @@ Model files location:
 
 Finally, I designed several BI dashboards usaing Tableau to visualize insights.
 
-##
-
 These dashboards summarize the dataset effectively and demonstrate an end-to-end workflow from raw data → cleaned data → modeled data → insights.
 
 
