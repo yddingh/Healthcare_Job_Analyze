@@ -1,0 +1,33 @@
+
+healthcare_job:
+  outputs:
+
+    dev:
+      type: sqlite
+      threads: 1
+      database: 'C:\Users\JKK4V3PX\healthcare_job_analyze\healthcare_job\data\cleaned_healthcare_jobs.db'
+      schema: 'main'
+      schemas_and_paths:
+        main: 'C:\Users\JKK4V3PX\healthcare_job_analyze\healthcare_job\data\cleaned_healthcare_jobs.db'
+      schema_directory: 'C:\Users\JKK4V3PX\healthcare_job_analyze\healthcare_job\data'
+      # optional: list of file paths of SQLite extensions to load. see README for more details.
+      # extensions:
+      #   - '/path/to/sqlean/crypto.so'
+      #   - '/path/to/sqlean/math.so'
+      #   - '/path/to/sqlean/text.so'
+
+    prod:
+      type: sqlite
+      threads: 1
+      database: <database name>
+      schema: 'main'
+      schemas_and_paths:
+        main: '/my_project/data/etl.db'
+      schema_directory: '/my_project/data'
+      # optional: list of file paths of SQLite extensions to load. see README for more details.
+      # extensions:
+      #   - '/path/to/sqlean/crypto.so'
+      #   - '/path/to/sqlean/math.so'
+      #   - '/path/to/sqlean/text.so'
+
+  target: dev
