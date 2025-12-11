@@ -9,7 +9,8 @@ This project uses a real-world job postings dataset from the eMedCareers job por
 
 The dataset was obtained from Kaggle: "30000+ healthcare jobs from eMedCareers (Europe)"
 
-Dataset source: https://www.kaggle.com/datasets/jobspikr/30000-latest-healthcare-jobs-emedcareers-europe
+Dataset source: 
+https://www.kaggle.com/datasets/jobspikr/30000-latest-healthcare-jobs-emedcareers-europe
 
 
 The dataset consists of 30,000 job postings collected from eMedCareers, a specialized job search platform for pharmaceutical, biotechnology, and healthcare roles across Europe.
@@ -26,6 +27,7 @@ Data was scraped and delivered via JobsPikr, a machine-learning powered job data
 - post_date – Date of job posting
 
 Raw data file location in this project:
+
 healthcare_job_analyze\healthcare_job_dbt\data\emed_careers_eu.csv
 
 ## Details
@@ -43,6 +45,7 @@ I used Python to perform the initial data cleansing steps:
 After cleansing, the transformed dataset was exported into a database file to be used for downstream modeling.
 
 Python scripts:
+
 healthcare_job_analyze\healthcare_job_dbt\script\data_cleansing.ipynb
 healthcare_job_analyze\healthcare_job_dbt\script\csv_to_sqlite.py
 
