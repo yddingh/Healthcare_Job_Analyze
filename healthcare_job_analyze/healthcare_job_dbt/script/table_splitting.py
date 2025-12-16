@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from sqlalchemy import create_engine
 
-INPUT_CSV = r"C:\Users\JKK4V3PX\healthcare_job_analyze\healthcare_job\data\cleaned_healthcare_jobs.csv"
+INPUT_CSV = r"E:\1 ydd's space\ds\healthcare_job_analyze\healthcare_job_analyze\healthcare_job_dbt\data\cleaned_healthcare_jobs.csv"
 SQLITE_DB = "healthcare.db"
 OUTDIR = "output_split_simple"
 os.makedirs(OUTDIR, exist_ok=True)
@@ -36,7 +36,6 @@ def main():
     df = read_csv_safe(INPUT_CSV)
     print("Loaded rows:", len(df), "cols:", df.columns.tolist())
 
-    # 需要的基础列（若不存在就补 NA）
     base_cols = [
         'job_id','post_date_parsed','category','job_type_std','job_title',
         'job_description_clean','desc_word_count','skill_flags','company_name',
