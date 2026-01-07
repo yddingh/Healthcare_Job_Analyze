@@ -68,9 +68,9 @@ This follows typical star schema principles, making the data easier to analyze a
 Model files location:
 \healthcare_job_analyze\healthcare_job_dbt\models
 
-3. BI Dashboard & Analysis(Tableau)
+3. BI Dashboard & Analysis(Power BI)
 
-Finally, I designed several BI dashboards usaing Tableau to visualize insights.
+Finally, I designed several BI dashboards usaing Power BI to visualize insights.
 
 These dashboards summarize the dataset effectively and demonstrate an end-to-end workflow from raw data → cleaned data → modeled data → insights.
 
